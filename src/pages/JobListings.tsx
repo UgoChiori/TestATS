@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 // import MyForm from './Form';
 import Modal from "react-modal";
-import MyForm from "./Form";
+import MyForm from "../components/Form";
 
 //Sample mock data for job listings
 
@@ -62,7 +62,7 @@ const mockJobListings: JobListing[] = [
   },
 ];
 
-const TestPage: React.FC = () => {
+const JobListings: React.FC = () => {
     const [selectedJobId, setSelectedJobId] = useState<number | null>(null);
 
 const handleApplyClick = (jobId: number) => {
@@ -100,4 +100,4 @@ const handleCloseForm = () => {
   );
 };
 
-export default TestPage;
+export default JobListings;
