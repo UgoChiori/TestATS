@@ -1,81 +1,90 @@
 import React from "react";
-import "./home.css"
-
-// type Props = {}
+import "./home.css";
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>
-        ATS is a job application tracking system that allows you to keep track
-        of your job applications.
-      </p>
+    <div className="container">
+      <header>
+        <h1 className="header-title">Welcome to ATS</h1>
+        <p className="header-description">
+          Keep track of your job applications and streamline your hiring process.
+        </p>
+      </header>
 
-      <h2>Features</h2>
-      <ul>
-        <li>View job listings</li>
-        <li>Apply to job listings</li>
-        <li>View job applications</li>
-        <li>View job application status</li>
-      </ul>
+      <section className="features">
+        <h2>Why Choose ATS?</h2>
+        <p className="feature-description">
+          ATS helps you manage job applications efficiently, allowing you to focus on interviews and landing your dream job.
+        </p>
+      </section>
 
-      <h2>Reduce Hiring Time</h2>
-      <p>
-        ATS allows you to keep track of your job applications so you can spend
-        less time applying to jobs and more time interviewing.
-      </p>
+      <section className="features">
+        <h2>Key Features</h2>
+        <ul className="feature-list">
+          <li>View job listings</li>
+          <li>Apply to job listings</li>
+          <li>Track job applications</li>
+          <li>Monitor application status</li>
+        </ul>
+      </section>
 
-      <h2>Get Organized</h2>
-        <p> ATS allows you to keep track of your job applications so you can spend less time applying to jobs and more time interviewing.</p>
+      <section className="benefits">
+        <div className="benefit">
+          <h2>Save Time</h2>
+          <p>Streamline your job application process and save valuable time.</p>
+        </div>
+        <div className="benefit">
+          <h2>Stay Organized</h2>
+          <p>Organize your job applications and stay on top of your progress.</p>
+        </div>
+        <div className="benefit">
+          <h2>Get Hired</h2>
+          <p>Enhance your chances of getting hired with better application management.</p>
+        </div>
+      </section>
 
-        <h2>Stay Motivated</h2>
-        <p>ATS allows you to keep track of your job applications so you can spend less time applying to jobs and more time interviewing.</p>
+      <section className="get-started">
+        <h2>Get Started Today</h2>
+        <p>Sign up for an account to get started on your job search journey.</p>
+        <div className="get-started-buttons">
+          <button className="sign-up-button">Sign Up</button>
+          <button className="sign-in-button">Sign In</button>
+        </div>
+      </section>
 
-        <h2>Get Hired</h2>
-        <p>ATS allows you to keep track of your job applications so you can spend less time applying to jobs and more time interviewing.</p>
+      <section className="contact">
+        <h2>Have Questions?</h2>
+        <p>Check out our FAQ page for answers to common inquiries.</p>
+        <button className="faq-button">FAQ</button>
+      </section>
 
+      <section className="contact">
+        <h2>Need Help?</h2>
+        <p>Contact our support team for assistance.</p>
+        <button className="contact-button">Contact Us</button>
+      </section>
 
-        <h2>How It Works</h2>
-        <p>Register</p>
-        <p>Sign In</p>
-        <p>View Job Listings</p>
-        <p>Apply to Job Listings</p>
-        <p>View Job Applications</p>
-        <p>View Job Application Status</p>
+      <section className="social-media">
+        <h2>Follow Us</h2>
+        <div className="social-media-links">
+          <a href="#" className="social-link">Twitter</a>
+          <a href="#" className="social-link">Facebook</a>
+          <a href="#" className="social-link">Instagram</a>
+        </div>
+      </section>
 
-      <h2>Get Started</h2>
-      <p>Sign up for an account to get started.</p>
-      <button>Sign Up</button>
-      <p>Already have an account? Sign in.</p>
-      <button>Sign In</button>
-
-      <h2>Questions?</h2>
-      <p>Check out our FAQ page.</p>
-      <button>FAQ</button>
-
-      <h2>Need Help?</h2>
-      <p>Contact us.</p>
-      <button>Contact Us</button>
-
-      <h2>Follow Us</h2>
-      <div className="social-media">
-      <a href="#">Twitter</a>
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      </div>
-
-
-      <h3>Legal</h3>
-     <div className="footer-links">
-      <a href="#">Terms of Service</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Cookie Policy</a>
-      <a href="#">Do Not Sell My Personal Information</a>
-      <a href="#">Accessibility</a>
-      <a href="#">Sitemap</a>
-      <a href="#">© 2021 ATS</a>
-     </div>
+      <footer>
+        <h3>Legal</h3>
+        <div className="footer-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Do Not Sell My Personal Information</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Sitemap</a>
+          <a href="#">© 2021 BAVARDE</a>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -1,0 +1,29 @@
+.box-container{
+   display: flex;
+   justify-content: space-between;
+    
+
+
+}
+
+.box{
+    border: 1px solid white;
+    padding: 20px;
+    margin: 10px;
+    background-color: #171111;
+    color: white;
+    border-radius: 5px;
+    width: 30%;
+    flex-basis: calc(33.33% - 20px);
+}
+
+
+@media screen and (max-width: 768px) {
+    .box-container{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
